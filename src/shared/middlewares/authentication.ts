@@ -7,7 +7,7 @@ class AuthenticationMiddleware implements NestMiddleware {
     console.log(req.headers, 'header');
     let token: any = req.headers;
     token = token.authorization;
-    console.log(token, 'token');
+    console.log(token, 'token123s');
 
     /* The line `return res.json({ message: 'Unauthorized' });` is sending a JSON response with a
     message "Unauthorized" when the authentication token is not present in the request headers.
